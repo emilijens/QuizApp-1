@@ -31,7 +31,7 @@ def about():
 @app.route('/test',methods = ['POST', 'GET'])
 def test():
     parametri = ["IQ","Augums","Kājas izmērs"]
-    images = [loadAllPictures]
+    images = loadAllPictures()
     return render_template("test.html",parametri=parametri,images=images)
 
 #Pārbaudes lapa, lai saprastu, ka kods vispār strādā
