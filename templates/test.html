@@ -1,4 +1,5 @@
 <html>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <body>
         <h1>Parametri no servera</h1>
         {% for par in parametri %} 
@@ -9,6 +10,6 @@
         <img src="{{image}}" width="400"/>
         <br>
         {% endfor %}
-        
+        <p>Šīs ir bildes!</p>
     </body>
 </html>
